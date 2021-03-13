@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4a4860;
+    border-bottom: 4px solid #323042;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    div.hamburger-icon {
+      position: absolute;
+      top: 0.3rem;
+      right: 1vw;
+      font-size: 1.5rem;
+      display: none;
+      color: white;
+    }
+
+    div.logo {
+      a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 0.5rem;
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      a {
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: white;
+        display: block;
+        transition: background 0.25s, box-shadow 0.15s;
+      }
+    }
+  }
+  nav ul li a:hover {
+    background-color: rgb(235, 251, 252);
+    color: #4a4860;
+    box-shadow: 0px 4px 0px 0px #525dbb;
+  }
+}
+
+.active {
+  display: flex;
+}
+
+section {
+  div.bgimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(235, 251, 252);
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    div.mycard {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      padding-bottom: 70%;
+      padding: 0.8rem;
+      div.imgContainer {
+        overflow: hidden;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transform: scale(1, 1);
+        transition: all 0.7s ease-in;
+      }
+      img:hover {
+        transform: scale(1.2, 1.2);
+      }
+      h3 {
+        text-align: center;
+        background-color: #4a4860;
+        color: white;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    padding: 0.3rem 0.5rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    div.cards {
+      div.mycard {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    nav {
+      flex-direction: column;
+      ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+      }
+      div.hamburger-icon {
+        display: flex;
+      }
+    }
+  }
+  main {
+    div.cards {
+      div.mycard {
+        width: 90%;
+      }
+    }
+  }
+}

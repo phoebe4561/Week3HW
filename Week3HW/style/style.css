@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #4a4860;
+  border-bottom: 4px solid #323042;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+header nav div.hamburger-icon {
+  position: absolute;
+  top: 0.3rem;
+  right: 1vw;
+  font-size: 1.5rem;
+  display: none;
+  color: white;
+}
+
+header nav div.logo a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul a {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  -webkit-transition: background 0.25s, -webkit-box-shadow 0.15s;
+  transition: background 0.25s, -webkit-box-shadow 0.15s;
+  transition: background 0.25s, box-shadow 0.15s;
+  transition: background 0.25s, box-shadow 0.15s, -webkit-box-shadow 0.15s;
+}
+
+header nav ul li a:hover {
+  background-color: #ebfbfc;
+  color: #4a4860;
+  -webkit-box-shadow: 0px 4px 0px 0px #525dbb;
+  box-shadow: 0px 4px 0px 0px #525dbb;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section div.bgimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: #ebfbfc;
+}
+
+section div.bgimg h2 {
+  font-size: 2rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+main div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 1200px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+main div.cards div.mycard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 25%;
+  padding-bottom: 70%;
+  padding: 0.8rem;
+}
+
+main div.cards div.mycard div.imgContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+main div.cards div.mycard img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+
+main div.cards div.mycard img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+main div.cards div.mycard h3 {
+  text-align: center;
+  background-color: #4a4860;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section button {
+  padding: 0.3rem 0.5rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  main div.cards div.mycard {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  header nav div.hamburger-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main div.cards div.mycard {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
